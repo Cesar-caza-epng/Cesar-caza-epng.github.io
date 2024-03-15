@@ -20,3 +20,24 @@ body{
     border-radius: 15px;
     border: 10px solid salmon;
 }
+
+#testo{
+    border-radius: 25px;
+    box-shadow: 4px 4px 10px;
+}
+
+#botonchito{
+    background-color: aquamarine;
+    border-radius: 25px;
+    border: 5px solid seagreen;
+}
+
+
+#contenedortestooles{
+    width: 100px;
+    height: 200px;
+}
+
+#bodipractica10{
+    background-color: coral;
+}
