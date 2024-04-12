@@ -10,8 +10,3 @@
     visibility: hidden;
 }
 
-@media (max-width: 767px){
-    body{
-        scale: 150%;
-    }
-}
