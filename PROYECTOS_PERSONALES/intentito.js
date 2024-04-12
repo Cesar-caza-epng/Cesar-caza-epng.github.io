@@ -22,11 +22,21 @@ function paintpoke(pokemon){
     weight=pokemon.weight/10;
     pokeimage.src=pokemon.sprites.front_default;
     if(pokemon.types.length==1){
-        poketext.innerHTML=`Num en la pokedex: ${pokemon.id}<br>Altura en CM: ${altura}<br>Peso en kilogramos: ${weight}<br>Tipos: ${pokemon.types[0].type.name}`;
+        poketext.innerHTML=`Num en la pokedex: ${pokemon.id}<br>Altura en CM: ${altura}<br>Peso en kilogramos: ${weight}<br>Tipo: ${pokemon.types[0].type.name}`;
     }
     if(pokemon.types.length==2){
         poketext.innerHTML=`Num en la pokedex: ${pokemon.id}<br>Altura en CM: ${altura}<br>Peso en kilogramos: ${weight}<br>Tipos: ${pokemon.types[0].type.name} y ${pokemon.types[1].type.name}`;
     }
+    if(pokemon.name=="vaporeon"){
+        STATS.innerHTML=`${pokemon.stats[0].stat.name}: ${pokemon.stats[0].base_stat}<br>
+    ${pokemon.stats[1].stat.name}: ${pokemon.stats[1].base_stat}<br>
+    ${pokemon.stats[2].stat.name}: ${pokemon.stats[2].base_stat}<br>
+    ${pokemon.stats[3].stat.name}: ${pokemon.stats[3].base_stat}<br>
+    ${pokemon.stats[4].stat.name}: ${pokemon.stats[4].base_stat}<br>
+    ${pokemon.stats[5].stat.name}: ${pokemon.stats[5].base_stat}<br><br><br>Sabias que en terminos...`
+    pokename.innerHTML=`${pokemon.name}!`
+    }
+    else{
     STATS.innerHTML=`${pokemon.stats[0].stat.name}: ${pokemon.stats[0].base_stat}<br>
     ${pokemon.stats[1].stat.name}: ${pokemon.stats[1].base_stat}<br>
     ${pokemon.stats[2].stat.name}: ${pokemon.stats[2].base_stat}<br>
@@ -34,6 +44,7 @@ function paintpoke(pokemon){
     ${pokemon.stats[4].stat.name}: ${pokemon.stats[4].base_stat}<br>
     ${pokemon.stats[5].stat.name}: ${pokemon.stats[5].base_stat}<br>`
     pokename.innerHTML=`${pokemon.name}!`
+    }
 }
 pokebutton.addEventListener("click", Get_poke)
 
