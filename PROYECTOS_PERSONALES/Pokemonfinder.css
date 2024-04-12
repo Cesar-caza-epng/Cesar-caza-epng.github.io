@@ -9,3 +9,9 @@
     border: solid black 4px;
     visibility: hidden;
 }
+
+@media (max-width: 767px){
+    body{
+        scale: 150%;
+    }
+}
