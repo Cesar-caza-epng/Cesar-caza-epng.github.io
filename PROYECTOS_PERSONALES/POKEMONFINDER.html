@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKEFINDER</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="Pokemonfinder.css">
+</head>
+<body style="text-align: center;">
+    <h1 style="margin-bottom: 3.5em;">POKEFINDER!</h1>
+    <div class="card" style="width: 18rem; margin: 0 auto;">
+        <center>
+        <h1 style="font-size: 1em;" id="pokename">INGRESA EL NOMBRE DEL POKEMON!</h1>
+    </center>
+        <img src="..." class="card-img-top" alt="" id="pokeimage">
+        <div class="card-body">
+          <p class="card-text" id="pokemon_details_space"></p>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: darkkhaki;">
+                  STATS BASE
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" style="background-color: wheat;">
+                <div class="accordion-body" id="STATS"></div>
+              </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">:3</span>
+            <input type="text" class="form-control" placeholder="INGRESA POKEMON" aria-label="Username" aria-describedby="basic-addon1" id="Texttosumbit">
+        </div>
+        <button type="button" class="btn btn-primary" id="Button_request">Buscar Pokemon</button>
+      </div>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="intentito.js"></script>
+</body>
+</html>

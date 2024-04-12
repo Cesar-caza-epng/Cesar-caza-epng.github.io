@@ -1,0 +1,11 @@
+#pokemon_details_space{
+    border: solid black 5px;
+    border-radius: 7px;
+    visibility: hidden;
+    font: bold;
+}
+
+#accordionFlushExample{
+    border: solid black 4px;
+    visibility: hidden;
+}
