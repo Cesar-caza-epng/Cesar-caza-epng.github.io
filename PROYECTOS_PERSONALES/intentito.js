@@ -5,22 +5,29 @@ const pokebutton=document.getElementById("Button_request");
 const pokename=document.getElementById("pokename");
 const acordion=document.getElementById("accordionFlushExample");
 const STATS=document.getElementById("STATS");
+const pokegrowl=document.getElementById("pokegrowl");
 
-
+function checkEnter(event){
+    if(event.keyCode==13)
+    {
+        Get_poke();
+    }
+}
 
 function Get_poke()
 {
     const name=pokemonname.value.toLowerCase();
+    poketext.focus();
     poketext.style.visibility="visible";
     acordion.style.visibility="visible";
     fetch(`https://pokeapi.co/api/v2/pokemon/${name}/`).then((res) =>res.json()).then((data) => paintpoke(data)).catch((error)=>{poketext.innerHTML="POKEMON NO ENCONTRADO"});
 }
 
 function paintpoke(pokemon){
-    const typeslist=pokemon.types;
     altura=pokemon.height*10;
     weight=pokemon.weight/10;
     pokeimage.src=pokemon.sprites.front_default;
+    pokegrowl.src=pokemon.cries.latest;
     if(pokemon.types.length==1){
         poketext.innerHTML=`Num en la pokedex: ${pokemon.id}<br>Altura en CM: ${altura}<br>Peso en kilogramos: ${weight}<br>Tipo: ${pokemon.types[0].type.name}`;
     }
@@ -47,4 +54,5 @@ function paintpoke(pokemon){
     }
 }
 pokebutton.addEventListener("click", Get_poke)
+pokemonname.addEventListener("keydown", checkEnter);
 
