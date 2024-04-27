@@ -338,7 +338,7 @@ select:disabled {
 [list]::-webkit-calendar-picker-indicator {
   display: none;
 }
-
+.form-control
 button,
 [type=button],
 [type=reset],
@@ -2158,15 +2158,15 @@ progress {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: gray;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .form-control {
     transition: none;
@@ -2175,6 +2175,7 @@ progress {
 .form-control[type=file] {
   overflow: hidden;
 }
+
 .form-control[type=file]:not(:disabled):not([readonly]) {
   cursor: pointer;
 }
@@ -2193,7 +2194,7 @@ progress {
   opacity: 1;
 }
 .form-control::placeholder {
-  color: #6c757d;
+  color: white;
   opacity: 1;
 }
 .form-control:disabled, .form-control[readonly] {

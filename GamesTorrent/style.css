@@ -1,0 +1,76 @@
+body {
+    background-image: url("img/background.jpg");
+    background-size: 10%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+img.responsive {
+    max-width: 100%;
+}
+
+#acherre{
+    color: darkorange;
+    height: 3px;
+    max-width: 100%;
+    opacity: 100;
+}
+
+.links{
+    display: flex;
+    justify-content: right;
+    width: 81.5%;
+}
+
+input[type="text"]::placeholder{
+    color: black;
+    opacity: 1;
+  }
+
+.linktop{
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    border: solid black;
+    margin-left: 1em;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.linktop:hover{
+    color: darkorange;
+}
+
+.container-fluid{
+    justify-content: space-evenly;
+}
+
+.linknav{
+    margin-left: 1em;
+    color: gray;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+
+.navbar-toggler-icon, .navbar-brand{
+    background-color: gray;
+}
+
+#navbarr{
+    margin-top: 0.1em;
+    width: 63%;
+}
+
+.bodi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Search{
+    box-shadow: 0 0 10px cyan;
+}
