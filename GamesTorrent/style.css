@@ -2,39 +2,40 @@ body {
     background-image: url("https://www.gamestorrents.fm/wp-content/themes/GamesTorrent/css/images/body1.jpg");
 }
 
-.container{
+.contene{
     display: flex;
     justify-content: center;
 }
 
+
 img.responsive {
-    max-width: 100%;
+    margin-top: 2em;
+    max-width: 1730px;
 }
 
 #acherre{
-    color: darkorange;
-    height: 3px;
-    max-width: 100%;
+    color: orangered;
+    height: 1px;
     opacity: 100;
 }
 
 .links{
     display: flex;
     justify-content: right;
-    width: 81.5%;
+    width: 1730px;
 }
 .linktop{
     font-weight: 500;
     background-color: black;
     color: white;
     border: solid black;
-    margin-left: 1em;
+    margin-left: 25px;
     font-size: 1.5em;
     text-decoration: none;
 }
 
 .linktop:hover{
-    color: darkorange;
+    color: orangered;
 }
 
 .container-fluid{
@@ -43,11 +44,15 @@ img.responsive {
 
 .linknav{
     margin-left: 1em;
+    margin: 0.5em;
     color: gray;
     text-decoration: none;
     font-size: 1.5em;
 }
 
+h1{
+    color: gray;
+}
 
 .navbar-toggler-icon, .navbar-brand{
     background-color: gray;
@@ -55,13 +60,20 @@ img.responsive {
 
 #navbarr{
     margin-top: 0.1em;
-    width: 63%;
+    width:1730px;
+    margin-bottom: 1.5em;
 }
 
 .bodi{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.bodi2{
+    display: flex;
+    justify-content: left;
+    width: 1730px;
 }
 
 #Search{
@@ -77,10 +89,73 @@ img.responsive {
 #gamedisplay{
     background-color: black;
 }
-
 .cajita{
-    display: flex;
+    justify-content: space-evenly;
+    width: 81%;
+    background-color: rgba(0, 0, 0, 0.36);
+}
+.cajita2{
+    display: flex; 
+    width: 18.5%;
+    margin-left: 1.5em;
+    background-color: rgba(0, 0, 0, 0.36);
+}
 
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.36);;
+td{
+    height: 300px;
+}
+
+.tableimg{
+    width: 150px;
+    height: 300px;
+    margin-left: 70px;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 1730px){
+    .bodi2{
+        width: 1200px;
+    }
+
+    #navbarr{
+        width:1200px;
+    }
+    
+    img.responsive {
+        max-width: 1200px;
+    }
+
+    .tableimg{
+        width: 100px;
+        height: 200px;
+    }
+
+    .links{
+        width: 1200px;
+    }
+}
+
+@media (max-width: 1200px){
+    .bodi2{
+        width: 670px;
+    }
+
+    #navbarr{
+        width:670px;
+    }
+    
+    img.responsive {
+        max-width: 670px;
+    }
+
+    .links{
+        width: 670px;
+    }
+
+
+    .tableimg{
+        width: 50px;
+        height: 100px;
+        margin: 10px;
+    }
 }
