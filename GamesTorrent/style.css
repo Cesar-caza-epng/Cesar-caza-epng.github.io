@@ -30,7 +30,7 @@ img.responsive {
     color: white;
     border: solid black;
     margin-left: 25px;
-    font-size: 1.5em;
+    font-size: 25px;
     text-decoration: none;
 }
 
@@ -43,9 +43,9 @@ img.responsive {
 }
 
 .linknav{
-    margin-left: 1em;
-    margin: 0.5em;
+    margin-left: 20px;
     color: gray;
+    margin: 20px;
     text-decoration: none;
     font-size: 1.5em;
 }
@@ -101,9 +101,6 @@ h1{
     background-color: rgba(0, 0, 0, 0.36);
 }
 
-td{
-    height: 300px;
-}
 
 .tableimg{
     width: 150px;
@@ -128,6 +125,7 @@ td{
     .tableimg{
         width: 100px;
         height: 200px;
+        margin: 30px;
     }
 
     .links{
@@ -154,8 +152,8 @@ td{
 
 
     .tableimg{
-        width: 50px;
-        height: 100px;
+        width: 70px;
+        height: 140px;
         margin: 10px;
     }
 }
