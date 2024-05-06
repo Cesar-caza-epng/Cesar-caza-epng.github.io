@@ -10,7 +10,7 @@ body {
 
 img.responsive {
     margin-top: 2em;
-    max-width: 1730px;
+    max-width: 1570px;
 }
 
 #acherre{
@@ -19,18 +19,24 @@ img.responsive {
     opacity: 100;
 }
 
+.juegos{
+    font-size: 20px;
+    margin-left: 12px;
+}
+
 .links{
     display: flex;
     justify-content: right;
     width: 1730px;
 }
 .linktop{
-    font-weight: 500;
+    font-weight: 700;
     background-color: black;
     color: white;
     border: solid black;
     margin-left: 25px;
-    font-size: 25px;
+    margin-bottom: 5px;
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -43,11 +49,11 @@ img.responsive {
 }
 
 .linknav{
-    margin-left: 20px;
+    margin-left: 40px;
     color: gray;
-    margin: 20px;
+    margin: 10px;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 15px;
 }
 
 h1{
@@ -104,7 +110,7 @@ h1{
 
 .tableimg{
     width: 150px;
-    height: 300px;
+    height: 250px;
     margin-left: 70px;
     margin-bottom: 25px;
 }
@@ -124,7 +130,7 @@ h1{
 
     .tableimg{
         width: 100px;
-        height: 200px;
+        height: 170px;
         margin: 30px;
     }
 
@@ -153,7 +159,26 @@ h1{
 
     .tableimg{
         width: 70px;
-        height: 140px;
+        height: 135px;
         margin: 10px;
     }
+}
+
+@media (max-width: 670px){
+    .bodi2{
+        width: 635px;
+    }
+
+    #navbarr{
+        width:635px;
+    }
+    
+    img.responsive {
+        max-width: 635px;
+    }
+
+    .links{
+        width: 635px;
+    }
+
 }
