@@ -101,12 +101,51 @@ h1{
     background-color: rgba(0, 0, 0, 0.36);
 }
 
+.lits{
+    list-style-type: none;
+    display: flex;
+}
+
+.letr{
+    text-decoration: none;
+    color: orangered;
+    margin-right: 8px;
+    margin-left: 8px;
+
+    font-weight: 500;
+}
+
+.lialfa{
+    background-color: transparent;
+    margin: 3px;
+    border: solid orangered 1px;
+}
+
+.lialfa:hover{
+    background-color: orangered;
+    cursor: pointer;
+}
+
+.lialfa:hover .letr{
+    color: white;
+}
 
 .tableimg{
     width: 150px;
     height: 300px;
     margin-left: 70px;
     margin-bottom: 25px;
+}
+
+.alfa{
+    background-color: #161616;
+    display: flex;
+    justify-content: center;
+}
+
+.juegos{
+    color: white;
+    margin: 20px;
 }
 
 @media (max-width: 1730px){
