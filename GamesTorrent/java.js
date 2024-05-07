@@ -1,21 +1,26 @@
-doc=document;
+table=document.getElementById("teibol");
 
+function fetching(){
+	fetch("WebScrappingGames/gamestorrentsgames.json").then((res)=>res.json()).then((data)=>getImgs(data));
+}
 
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '3cb60a1353msh0e3e23332d4e034p1a674bjsne351ed982157',
-		'X-RapidAPI-Host': 'steam-api7.p.rapidapi.com'
+function getImgs(data){
+	let cont=0;
+	for (let i = 1; i < data["imgs"].length; i) {
+	cont=cont+1;
+	tere=document.createElement("tr");
+	tede=document.createElement("td");
+	image=document.createElement("img");
+	image.src=data["imgs"][i];
+	image.classList.add("tableimg");
+	tede.appendChild(image);
+	tere.appendChild(tede);
+
+	if(cont==5){
+		table.appendChild(tere);
+		cont=0;
 	}
-};
-
-
-function fetchiar(){
-    fetch("https://steam-api7.p.rapidapi.com/name/", options).then((res)=>res.json()).then((data)=>getName(data));
+   }
 }
 
-function getName(data){
-    console.log(data);
-}
-
-fetchiar();
+fetching();
