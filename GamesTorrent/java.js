@@ -3,24 +3,29 @@ table=document.getElementById("teibol");
 function fetching(){
 	fetch("WebScrappingGames/gamestorrentsgames.json").then((res)=>res.json()).then((data)=>getImgs(data));
 }
-
+i=1;
 function getImgs(data){
-	let cont=0;
-	for (let i = 1; i < data["imgs"].length; i) {
-	cont=cont+1;
-	tere=document.createElement("tr");
-	tede=document.createElement("td");
-	image=document.createElement("img");
-	image.src=data["imgs"][i];
-	image.classList.add("tableimg");
-	tede.appendChild(image);
-	tere.appendChild(tede);
-
-	if(cont==5){
-		table.appendChild(tere);
-		cont=0;
+	for (let j = 0; j < 5; j++) {
+		imas=i+6;
+		tere=document.createElement("tr");
+		for (i = i; i < imas; i++) {
+			tede=document.createElement("td");
+			ach=document.createElement("h1")
+			let gni=data["imgs"][i].lastIndexOf("/");
+			let gn=data["imgs"][i].substring(gni+1);
+			gn=gn.substring(0,gn.length-4);
+			ach.innerHTML=gn
+			ach.classList.add("GT");
+			image=document.createElement("img");
+			image.classList.add("stet");
+			image.src=data["imgs"][i];
+			image.classList.add("tableimg");
+			tede.appendChild(image);
+			tede.appendChild(ach);
+			tere.appendChild(tede);
 	}
-   }
+		table.appendChild(tere);
+	}
 }
 
 fetching();

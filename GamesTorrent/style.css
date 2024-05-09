@@ -14,7 +14,7 @@ img.responsive {
 }
 
 #acherre{
-    color: orangered;
+    color: #ff5a28;
     height: 1px;
     opacity: 100;
 }
@@ -35,7 +35,7 @@ img.responsive {
 }
 
 .linktop:hover{
-    color: orangered;
+    color: #ff5a28;
 }
 
 .container-fluid{
@@ -108,7 +108,7 @@ h1{
 
 .letr{
     text-decoration: none;
-    color: orangered;
+    color: #ff5a28;
     margin-right: 8px;
     margin-left: 8px;
 
@@ -118,11 +118,11 @@ h1{
 .lialfa{
     background-color: transparent;
     margin: 3px;
-    border: solid orangered 1px;
+    border: solid #ff5a28 1px;
 }
 
 .lialfa:hover{
-    background-color: orangered;
+    background-color: #ff5a28;
     cursor: pointer;
 }
 
@@ -135,6 +135,11 @@ h1{
     height: 300px;
     margin-left: 70px;
     margin-bottom: 25px;
+    
+}
+
+#teibol{
+    margin-right: 55px;
 }
 
 .alfa{
@@ -149,6 +154,23 @@ h1{
     margin-left: 30px;
     margin-bottom: 34px;
     margin-top: 15px;
+}
+
+.stet{
+    border-radius: 5px;
+    border: solid black 5px;
+}
+
+.GT{
+    background-color: black;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 150px;
+    white-space: nowrap;
+    margin-left: 70px;
+    margin-bottom: 25px;
+    font-size: 25px;
+
 }
 
 @media (max-width: 1730px){
@@ -170,13 +192,22 @@ h1{
         margin: 30px;
     }
 
+
+    .GT{
+        background-color: black;
+        text-align: center;
+        width: 100px;
+        margin: 30px;
+    }
+
+
     .links{
         width: 1200px;
     }
 
     .letr{
         text-decoration: none;
-        color: orangered;
+        color: #ff5a28;
         margin-right: 4px;
         margin-left: 4px;
     
@@ -186,7 +217,7 @@ h1{
     .lialfa{
         background-color: transparent;
         margin: 1px;
-        border: solid orangered 1px;
+        border: solid #ff5a28 1px;
     }
     
 }
@@ -212,6 +243,12 @@ h1{
     .tableimg{
         width: 70px;
         height: 140px;
+        margin: 10px;
+    }
+
+    .GT{
+        background-color: black;
+        width: 70px;
         margin: 10px;
     }
 }
