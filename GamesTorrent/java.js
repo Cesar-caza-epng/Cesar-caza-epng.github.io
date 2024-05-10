@@ -9,6 +9,8 @@ function getImgs(data){
 		imas=i+6;
 		tere=document.createElement("tr");
 		for (i = i; i < imas; i++) {
+			a=document.createElement("a");
+			a.href="#"
 			tede=document.createElement("td");
 			ach=document.createElement("h1")
 			let gni=data["imgs"][i].lastIndexOf("/");
@@ -20,7 +22,8 @@ function getImgs(data){
 			image.classList.add("stet");
 			image.src=data["imgs"][i];
 			image.classList.add("tableimg");
-			tede.appendChild(image);
+			a.appendChild(image);
+			tede.appendChild(a);
 			tede.appendChild(ach);
 			tere.appendChild(tede);
 	}

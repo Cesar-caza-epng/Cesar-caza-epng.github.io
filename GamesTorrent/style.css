@@ -64,6 +64,7 @@ h1{
     margin-bottom: 1.5em;
 }
 
+
 .bodi{
     display: flex;
     justify-content: center;
@@ -90,15 +91,27 @@ h1{
     background-color: black;
 }
 .cajita{
-    justify-content: space-evenly;
     width: 81%;
     background-color: rgba(0, 0, 0, 0.36);
 }
 .cajita2{
     display: flex; 
     width: 18.5%;
+    height: 600px;
     margin-left: 1.5em;
     background-color: rgba(0, 0, 0, 0.36);
+}
+
+.seletgam{
+   width: 50%; 
+   height: 50px;
+   font-size: 20px;
+   background-color: grey;
+   margin: 5px;
+}
+
+option{
+    margin-left: 30px;
 }
 
 .lits{
@@ -138,9 +151,6 @@ h1{
     
 }
 
-#teibol{
-    margin-right: 55px;
-}
 
 .alfa{
     background-color: #161616;
@@ -165,6 +175,7 @@ h1{
     background-color: black;
     text-overflow: ellipsis;
     overflow: hidden;
+    color: white;
     width: 150px;
     white-space: nowrap;
     margin-left: 70px;
@@ -195,6 +206,7 @@ h1{
 
     .GT{
         background-color: black;
+        color: white;
         text-align: center;
         width: 100px;
         margin: 30px;
@@ -248,6 +260,7 @@ h1{
 
     .GT{
         background-color: black;
+        color: white;
         width: 70px;
         margin: 10px;
     }
