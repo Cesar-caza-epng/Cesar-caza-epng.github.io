@@ -7,7 +7,6 @@ body {
     justify-content: center;
 }
 
-
 img.responsive {
     margin-top: 2em;
     max-width: 1730px;
@@ -169,6 +168,10 @@ option{
 .stet{
     border-radius: 5px;
     border: solid black 5px;
+}
+
+.stet:hover{
+    filter: brightness(70%);
 }
 
 .GT{
