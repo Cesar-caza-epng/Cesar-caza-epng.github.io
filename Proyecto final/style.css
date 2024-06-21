@@ -1,0 +1,8 @@
+.cent{
+    justify-content: center;
+    display: flex;
+}
+
+td{
+    margin: 15px;
+}

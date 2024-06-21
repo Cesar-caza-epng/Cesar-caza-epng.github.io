@@ -4,11 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROYECTO FINAL</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="background-color: aquamarine;">
     <div class="cent">
-
+        <h1 style="font-size: 20px; font-family: 'Times New Roman', Times, serif; border: solid black 2px; background-color: white; border-radius: 15px; padding: 3px;">SELECT * FROM alumnos</h1>
     </div>
+    <div class="cent">
+        <table border="2" style="background-color: white;">
+            <tr>
+                <td style="width: 150px;">
+                    <p>Mostrar Todos los alumnos de la tabla alumnos</p>
+                </td>
+                <td>
+                    <img src="imgs/CAP_ALumnos.png" alt="" style="height: 150px; width: 200px;">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="cent">
+        <h1 style="font-size: 20px; font-family: 'Times New Roman', Times, serif; border: solid black 2px; background-color: white; border-radius: 15px; padding: 3px;">SELECT curso.nombreDescriptivo,asignatura.nombre FROM curso INNER JOIN asignatura ON curso.idCurso=asignatura.curso
+        </h1>
+    </div>
+    <div class="cent">
+        <table border="2" style="background-color: white;">
+            <tr>
+                <td style="width: 150px;">
+                    <p>Mostrar los nombres de los cursos con sus respectivas asignaturas</p>
+                </td>
+                <td>
+                    <img src="imgs/CAP_ALumnos.png" alt="" style="height: 150px; width: 200px;">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
 </body>
 </html>
