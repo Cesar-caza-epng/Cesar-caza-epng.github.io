@@ -13,7 +13,7 @@
     <img src="imgs/cute.gif" alt="" style="float: right; width: 150px; height: 150px;">
     <img src="imgs/WAAAA.jpg" alt="" style=" width: 150px; height: 150px;">
   </div>
-  
+
   <div class="card">
     <div class="cent">
       <h1>PROYECTO FINAL</h1>
@@ -90,7 +90,18 @@
 
   <div class="card">
     <div class="cent">
-      <h1>7- SELECT alumno.nombre FROM alumno INNER JOIN impartir INNER JOIN matricula on impartir.idAsignatura=asignatura.idAsignatura and impartir.idProfesor="PR0048";
+      <h1>7- SELECT asignatura.nombre, COUNT(matricula.idAlumno) AS TOT_ins FROM asignatura JOIN matricula ON asignatura.idAsignatura = matricula.idAsignatura GROUP BY asignatura.nombre ORDER BY TOT_ins DESC;
+      </h1>
+    </div>
+    <div class="card-body">
+      <p class="card-text">Mostrar la asignatura que tiene más alumnos en total</p>
+      <img src="imgs/CAP_Count.PNG" class="card-img-top" alt="...">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="cent">
+      <h1>8- SELECT alumno.nombre FROM alumno INNER JOIN impartir INNER JOIN matricula on impartir.idAsignatura=asignatura.idAsignatura and impartir.idProfesor="PR0048";
       </h1>
     </div>
     <div class="card-body">
@@ -101,7 +112,7 @@
 
   <div class="card">
     <div class="cent">
-      <h1>8- FROM curso
+      <h1>9- FROM curso
         INNER JOIN profesor
         INNER JOIN asignatura
         ON curso.idCurso=asignatura.curso
@@ -117,7 +128,7 @@
 
   <div class="card">
     <div class="cent">
-      <h1>9- SELECT alumno.nombre, asignatura.nombre, profesor.nombre, curso.nombreDescriptivo
+      <h1>10- SELECT alumno.nombre, asignatura.nombre, profesor.nombre, curso.nombreDescriptivo
         FROM alumno
         INNER JOIN matricula ON alumno.idAlumno=matricula.idAlumno
         INNER JOIN asignatura ON matricula.idAsignatura=asignatura.idAsignatura
