@@ -1,45 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROYECTO FINAL</title>
-    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROYECTO FINAL</title>
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body style="background-color: aquamarine;">
+  <div class="cent">
+    <img src="imgs/BLUELBALLS.png" alt="" style="left: 0px; width: 150px; height: 150px; position: relative;">
+    <img src="imgs/cute.gif" alt="" style="float: right; width: 150px; height: 150px;">
+    <img src="imgs/WAAAA.jpg" alt="" style=" width: 150px; height: 150px;">
+  </div>
+  
+  <div class="card">
     <div class="cent">
-        <h1 style="font-size: 20px; font-family: 'Times New Roman', Times, serif; border: solid black 2px; background-color: white; border-radius: 15px; padding: 3px;">SELECT * FROM alumnos</h1>
+      <h1>PROYECTO FINAL</h1>
     </div>
     <div class="cent">
-        <table border="2" style="background-color: white;">
-            <tr>
-                <td style="width: 150px;">
-                    <p>Mostrar Todos los alumnos de la tabla alumnos</p>
-                </td>
-                <td>
-                    <img src="imgs/CAP_ALumnos.png" alt="" style="height: 150px; width: 200px;">
-                </td>
-            </tr>
-        </table>
-    </div>
+        <h1>César Adrian Cázarez Rivas</h1>
+      </div>
+  </div>
 
+  <div class="card">
     <div class="cent">
-        <h1 style="font-size: 20px; font-family: 'Times New Roman', Times, serif; border: solid black 2px; background-color: white; border-radius: 15px; padding: 3px;">SELECT curso.nombreDescriptivo,asignatura.nombre FROM curso INNER JOIN asignatura ON curso.idCurso=asignatura.curso
-        </h1>
+      <h1>1- SELECT * FROM alumnos</h1>
     </div>
+    <div class="card-body">
+      <p class="card-text">Mostrar Todos los alumnos de la tabla alumnos</p>
+      <img src="imgs/CAP_ALumnos.png" class="card-img-top" alt="...">
+    </div>
+  </div>
+
+  <div class="card">
     <div class="cent">
-        <table border="2" style="background-color: white;">
-            <tr>
-                <td style="width: 150px;">
-                    <p>Mostrar los nombres de los cursos con sus respectivas asignaturas</p>
-                </td>
-                <td>
-                    <img src="imgs/CAP_ALumnos.png" alt="" style="height: 150px; width: 200px;">
-                </td>
-            </tr>
-        </table>
+      <h1>2- SELECT curso.nombreDescriptivo,asignatura.nombre FROM curso INNER JOIN asignatura ON curso.idCurso=asignatura.curso
+      </h1>
     </div>
-    <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <div class="card-body">
+      <p class="card-text">Mostrar los nombres de los cursos con sus respectivas asignaturas</p>
+      <img src="imgs/Cap_asignaturanombre.png" class="card-img-top" alt="...">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="cent">
+      <h1>3- SELECT nombre,apellido1 FROM alumno WHERE beca="si";
+      </h1>
+    </div>
+    <div class="card-body">
+      <p class="card-text">Mostrar los nombres de los ALumnos que tengan beca</p>
+      <img src="imgs/CAP_alumnosbeca.PNG" class="card-img-top" alt="...">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="cent">
+      <h1>4- SELECT nombre,apellido1,NIF FROM profesor;
+      </h1>
+    </div>
+    <div class="card-body">
+      <p class="card-text">Mostrar los nombres Y apellidos de los profesores y su numero de contacto</p>
+      <img src="imgs/CAP_profnum.PNG" class="card-img-top" alt="...">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="cent">
+      <h1>5- SELECT * FROM alumno INNER JOIN matricula ON matricula.idAsignatura="AS009";
+      </h1>
+    </div>
+    <div class="card-body">
+      <p class="card-text">Mostrar todo sobre los alumnos que van a progra</p>
+      <img src="imgs/CAP_alumnprogra.PNG" class="card-img-top" alt="...">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="cent">
+      <h1>6- SELECT profesor.nombre,asignatura.nombre FROM profesor INNER JOIN impartir ON profesor.idProfesor=impartir.idProfesor iNNER JOIN asignatura ON impartir.idAsignatura=asignatura.idAsignatura;
+      </h1>
+    </div>
+    <div class="card-body">
+      <p class="card-text">Mostrar Los nombres de los profes y la asignatura que imparten</p>
+      <img src="imgs/CAP_profeasignatura.PNG" class="card-img-top" alt="...">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="cent">
+      <h1>7- SELECT alumno.nombre FROM alumno INNER JOIN impartir INNER JOIN matricula on impartir.idAsignatura=asignatura.idAsignatura and impartir.idProfesor="PR0048";
+      </h1>
+    </div>
+    <div class="card-body">
+      <p class="card-text">Mostrar a los alumnos que les da clase el profesor jose manuel</p>
+      <img src="imgs/CAP_ALUMNOPROFESORLUIS.PNG" class="card-img-top" alt="...">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="cent">
+      <h1>8- FROM curso
+        INNER JOIN profesor
+        INNER JOIN asignatura
+        ON curso.idCurso=asignatura.curso
+        INNER JOIN impartir
+        ON asignatura.idAsignatura=impartir.idAsignatura;
+      </h1>
+    </div>
+    <div class="card-body">
+      <p class="card-text">Mostrar los cursos, con sus asignaturas y que maestros las imparten</p>
+      <img src="imgs/CAP_CURSOASIGNATURAPROFE.PNG" class="card-img-top" alt="...">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="cent">
+      <h1>9- SELECT alumno.nombre, asignatura.nombre, profesor.nombre, curso.nombreDescriptivo
+        FROM alumno
+        INNER JOIN matricula ON alumno.idAlumno=matricula.idAlumno
+        INNER JOIN asignatura ON matricula.idAsignatura=asignatura.idAsignatura
+        INNER JOIN impartir ON impartir.idAsignatura=asignatura.idasignatura
+        INNER JOIN profesor ON impartir.idProfesor=profesor.idProfesor
+        INNER JOIN curso ON curso.idCurso=asignatura.curso;
+      </h1>
+    </div>
+    <div class="card-body">
+      <p class="card-text">Mostrar todos los alumonos con asignatura, profesor y curso</p>
+      <img src="imgs/CAP_TODOTODOTODO.PNG" class="card-img-top" alt="...">
+    </div>
+  </div>
+
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
 </body>
 </html>
