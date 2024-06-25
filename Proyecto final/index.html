@@ -101,7 +101,7 @@
 
   <div class="card">
     <div class="cent">
-      <h1>8- SELECT alumno.nombre FROM alumno INNER JOIN impartir INNER JOIN matricula on impartir.idAsignatura=asignatura.idAsignatura and impartir.idProfesor="PR0048";
+      <h1>8- SELECT alumno.nombre,profesor.nombre FROM alumno INNER JOIN profesor INNER JOIN impartir ON impartir.idProfesor="PR048" INNER JOIN matricula on impartir.idAsignatura=matricula.idAsignatura;
       </h1>
     </div>
     <div class="card-body">
@@ -112,12 +112,8 @@
 
   <div class="card">
     <div class="cent">
-      <h1>9- FROM curso
-        INNER JOIN profesor
-        INNER JOIN asignatura
-        ON curso.idCurso=asignatura.curso
-        INNER JOIN impartir
-        ON asignatura.idAsignatura=impartir.idAsignatura;
+      <h1>9-SELECT curso.nombreDescriptivo AS "curso", asignatura.nombre AS "asignatura", profesor.nombre AS "profesor" FROM curso INNER JOIN asignatura ON asignatura.curso=curso.idCurso INNER JOIN profesor ON asignatura.coordinador=profesor.idProfesor;
+
       </h1>
     </div>
     <div class="card-body">
@@ -138,7 +134,7 @@
       </h1>
     </div>
     <div class="card-body">
-      <p class="card-text">Mostrar todos los alumonos con asignatura, profesor y curso</p>
+      <p class="card-text">Mostrar todos los alumnos con asignatura, profesor y curso</p>
       <img src="imgs/CAP_TODOTODOTODO.PNG" class="card-img-top" alt="...">
     </div>
   </div>
