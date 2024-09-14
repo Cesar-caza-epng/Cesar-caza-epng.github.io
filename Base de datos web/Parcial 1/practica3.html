@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del GATO</title>
+    <style>
+        #center{
+            top: 50%;
+            left: 50%;
+            border: solid black 0.5vw;
+            border-radius: 0.5vw;
+            padding: 1vw;
+            position: fixed;
+            transform: translate(-50%,-50%);
+        }
+
+        #text{
+            width: 1vw;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="center">
+        <h1>Juego del GATO</h1><hr>
+        <form action="practica3.php" method="POST">
+            <label for="">Jugador 1 (X): </label><input type="text" name="jugador1" value="Luis" required>
+            <label for="">Jugador 2 (O): </label><input type="text" name="jugador2" value="Carlos" required><br><br>
+            <div id="game">
+                <input id="text" type="text" name="gato[]" value="O" required>
+                <input id="text" type="text" name="gato[]" value="O" required>
+                <input id="text" type="text" name="gato[]" value="X" required><br>
+
+                <input id="text" type="text" name="gato[]" value="X" required>
+                <input id="text" type="text" name="gato[]" value="O" required>
+                <input id="text" type="text" name="gato[]" value="X" required><br>
+
+                <input id="text" type="text" name="gato[]" value="X" required>
+                <input id="text" type="text" name="gato[]" value="X" required>
+                <input id="text" type="text" name="gato[]" value="O" required>
+
+                <input type="submit" value="Jugar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
