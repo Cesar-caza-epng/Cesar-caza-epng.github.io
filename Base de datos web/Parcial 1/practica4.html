@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen en línea</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .fldiv{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+        body{
+            background-color: burlywood;
+            padding: 1vw;
+            border: solid black 1vw;
+        }
+        .decimg{
+            width: 20vw;
+            height: 20vw;
+            border: solid black 0.3vw;
+            border-radius: 1vw;
+            background-color: antiquewhite;
+            padding: 1vw;
+        }
+        .cent{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body >
+    <div class="container">
+        <div class="fldiv">
+            <img src="imgs/teodolo.jpg" alt="" width="150vw" height="150vw">
+            <img  src="imgs/freaky-tree.gif" alt="" width="150vw" height="150vw">
+            <img  src="imgs/the.gif" alt="" width="150vw" height="150vw">
+        </div>
+
+        <form action="practica4.php" method="POST">
+            <h3>introduce tu nombre</h3>
+            <input type="text" name="name">
+            <div class="row">
+                <h1>Exámen de Ingles</h1><hr>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        1. ¿Como dices "Rápido" en inglés?
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta1" value="feast" required> feast </p>
+                            <p><input type="radio" name="pregunta1" value="fast" required> fast </p>
+                            <p><input type="radio" name="pregunta1" value="resio" required> resio </p>
+                        </div>
+                        <div class="cent">
+                            <img  src="imgs/man-runs-fast.gif" alt="" class="decimg">
+                            
+                        </div>
+                    </div>
+                    <div class="card p-4 mb-4">
+                        <p>
+                            2. i was <input type="text" name="pregunta2" id=""> (eat - past)
+                        </p>
+                        <div class="cent">
+                            <img src="imgs/man-trying-to-take-food-from-greedy-lady-lady-eating-food.gif" alt="" class="decimg">
+                            
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        3. Selecciona los 2 que son verdaderos
+                        </div>
+                        <div class="card-body">
+                            <p><input type="checkbox" name="pregunta3[]" value="a1" > luis carlos loves the previous programming year </p>
+                            <p><input type="checkbox" name="pregunta3[]" value="a2" > rochin is an omnipotent god </p>
+                            <p><input type="checkbox" name="pregunta3[]" value="a3" > ibarra hates you </p>
+                            <div class="cent">
+                                <img src="imgs/monkey-thinking-meme-monkey-thinking-sticker.gif" alt="" class="decimg">
+                            </div>
+                            ta viendo a ibarra jajsajsdj
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        <p>4. yo pierre you wanna <input type="text" name="pregunta4" id="">(coming - present simple) out here?</p>
+                        <div class="cent">
+                            <img src="imgs/ifunny-wwe.gif" alt="" class="decimg">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <p>5. yo dog can i get some ice cream?<br>ye only a<input type="text" name="pregunta5" id="">(a spoon that is full)</p>
+                            <div class="cent">
+                                <img src="imgs/can-i-get-some-ice-cream-only-a-spoon-full.gif" alt="" class="decimg">
+                                
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        6. which chipmunk from alvin and the chipmunks is the best?
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta6" value="a1" required> yes, of course! </p>
+                            <p><input type="radio" name="pregunta6" value="a2" required> nah get away from me </p>
+                            <p><input type="radio" name="pregunta6" value="a3" required> THEODOREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE </p>
+                            <div class="cent">
+                                <img src="imgs/crying-screaming.gif" alt="" class="decimg">
+                                
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        7. which character of los polinesios is the best?
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta7" value="a1" required> purple haired woman </p>
+                            <p><input type="radio" name="pregunta7" value="a2" required> Rafa pollotieso </p>
+                            <p><input type="radio" name="pregunta7" value="a3" required> pink haired woman </p>
+                            <div class="cent">
+                                <img src="imgs/rafa-polinesio-rafa-polinesio-bailando.gif" alt="" class="decimg">
+                                
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        8. the sexual orientation:
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta8" value="a1" required> GAY </p>
+                            <p><input type="radio" name="pregunta8" value="a2" required> LESBIANS </p>
+                            <p><input type="radio" name="pregunta8" value="a3" required> HETEROSEXUAL </p>
+                            <div class="cent">
+                                <img src="imgs/gay-gay-bear.gif" alt="" class="decimg">
+                                
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        9. which of the following is the coolest?
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta9" value="a1" required> 1. </p>
+                            <p><input type="radio" name="pregunta9" value="a2" required> 2. </p>
+                            <p><input type="radio" name="pregunta9" value="a3" required> 3. </p>
+                            <div class="fldiv">
+                                <img src="imgs/grasias openceve.JPG" alt="" class="decimg">
+                                <img src="imgs/ella-ya-gano-lcdlf.gif" alt="" class="decimg"> 
+                                <img src="imgs/baraba-careca.gif" alt="" class="decimg"> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        10. which one is the minion?
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta10" value="a1" required> ye </p>
+                            <p><input type="radio" name="pregunta10" value="a2" required> woman </p>
+                            <div class="fldiv">
+                                <img src="imgs/ye.gif" alt="" class="decimg">
+                                <img src="imgs/alfred-marko.gif" alt="" class="decimg"> 
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <br><input type="submit" class="btn btn-primary" value="Terminar examen">
+        </form>
+    </div>
+</body>
+</html>
