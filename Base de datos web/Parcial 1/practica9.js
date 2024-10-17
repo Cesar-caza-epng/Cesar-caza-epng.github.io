@@ -1,16 +1,19 @@
 $(document).ready(function(){
     let arr= new Array(54).fill(false);
-    $("#give").click(function(){
         var c =true;
-        var n = Math.floor(Math.random()*54) + 1;
-        while(c){
-            if(arr[n-1]==true){
-                continue;
-            }else{
-                arr[n-1]=true;
-                c=false
-                $("#disp").html("<img  src='loteria/"+n+".jpg'>");
+        var cont=0;
+        while(cont<16){
+            console.log("SEMETIO");
+            var n = Math.floor(Math.random()*54) + 1;
+            arr[cont]=n;
+            for (let i = 0; i < cont; i++) {
+                if(arr[i]==n){
+                    n= Math.floor(Math.random()*54) + 1;
+                    break;
+                }
             }
+            console.log(arr);
+            $("#disp").append("<img src='loteria/"+n+".jpg' alt=''>");
+            cont++;
         }
-    });
 });
